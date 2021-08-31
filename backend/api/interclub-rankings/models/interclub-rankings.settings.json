@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interclub_rankings",
+  "info": {
+    "name": "InterclubRankings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "competition_round": {
+      "type": "integer"
+    },
+    "clubRanking": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ic-ranking.clubs-ranking"
+    },
+    "competition_division": {
+      "type": "string",
+      "required": true
+    },
+    "comments": {
+      "type": "richtext"
+    }
+  }
+}

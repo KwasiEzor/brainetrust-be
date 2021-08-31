@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interclub_competitions",
+  "info": {
+    "name": "InterclubCompetitions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_team": {
+      "type": "string",
+      "required": true
+    },
+    "last_team": {
+      "type": "string"
+    },
+    "score_first_team": {
+      "type": "integer"
+    },
+    "score_last_team": {
+      "type": "integer"
+    },
+    "competition_date": {
+      "type": "datetime"
+    },
+    "locality": {
+      "model": "localities",
+      "via": "interclub_competition"
+    },
+    "match_sheet": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "clubs": {
+      "via": "interclub_competition",
+      "collection": "clubs"
+    }
+  }
+}

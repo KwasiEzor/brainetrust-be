@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "localities",
+  "info": {
+    "name": "Localities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "locality": {
+      "type": "string",
+      "required": true
+    },
+    "postalCode": {
+      "type": "string",
+      "required": false
+    },
+    "commune": {
+      "type": "string"
+    },
+    "provinceRegion": {
+      "type": "string"
+    },
+    "clubs": {
+      "via": "locality",
+      "collection": "clubs"
+    },
+    "interclub_competition": {
+      "via": "locality",
+      "model": "interclub-competitions"
+    },
+    "members": {
+      "via": "locality",
+      "collection": "members"
+    }
+  }
+}

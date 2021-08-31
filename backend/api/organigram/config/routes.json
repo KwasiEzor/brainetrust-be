@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/organigrams",
+      "handler": "organigram.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/organigrams/count",
+      "handler": "organigram.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/organigrams/:id",
+      "handler": "organigram.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/organigrams",
+      "handler": "organigram.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/organigrams/:id",
+      "handler": "organigram.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/organigrams/:id",
+      "handler": "organigram.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

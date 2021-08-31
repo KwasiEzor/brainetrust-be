@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Posts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "source": {
+      "type": "richtext"
+    },
+    "post_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "released_date": {
+      "type": "datetime"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "contentLayout": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.content-layout"
+    },
+    "p_categories": {
+      "via": "posts",
+      "collection": "p-categories"
+    },
+    "p_tags": {
+      "via": "posts",
+      "collection": "p-tags"
+    },
+    "likes": {
+      "via": "posts",
+      "collection": "likes"
+    },
+    "p_comments": {
+      "via": "post",
+      "collection": "p-comments"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "video_files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ply-series",
+      "handler": "ply-series.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ply-series/count",
+      "handler": "ply-series.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ply-series/:id",
+      "handler": "ply-series.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ply-series",
+      "handler": "ply-series.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ply-series/:id",
+      "handler": "ply-series.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ply-series/:id",
+      "handler": "ply-series.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

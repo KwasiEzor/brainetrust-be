@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organigrams",
+  "info": {
+    "name": "Organigram",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "branch": {
+      "type": "component",
+      "repeatable": true,
+      "component": "org-branch.branch"
+    }
+  }
+}

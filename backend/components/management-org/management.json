@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_management_org_managements",
+  "info": {
+    "name": "management",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "member_role": {
+      "model": "member-roles"
+    },
+    "member": {
+      "model": "members"
+    },
+    "comments": {
+      "type": "richtext"
+    }
+  }
+}

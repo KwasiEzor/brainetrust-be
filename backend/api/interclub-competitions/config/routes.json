@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/interclub-competitions",
+      "handler": "interclub-competitions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/interclub-competitions/count",
+      "handler": "interclub-competitions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/interclub-competitions/:id",
+      "handler": "interclub-competitions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/interclub-competitions",
+      "handler": "interclub-competitions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/interclub-competitions/:id",
+      "handler": "interclub-competitions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/interclub-competitions/:id",
+      "handler": "interclub-competitions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

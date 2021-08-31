@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_org_branch_branches",
+  "info": {
+    "name": "branch",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "office": {
+      "type": "component",
+      "repeatable": true,
+      "component": "executive-office.executive"
+    },
+    "committee": {
+      "type": "component",
+      "repeatable": true,
+      "component": "management-org.management"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "players",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "license_nb": {
+      "type": "string"
+    },
+    "affiliated": {
+      "type": "boolean",
+      "default": true
+    },
+    "club": {
+      "via": "players",
+      "model": "clubs"
+    },
+    "ply_sery": {
+      "model": "ply-series",
+      "via": "players"
+    },
+    "member": {
+      "model": "members"
+    },
+    "ply_category": {
+      "model": "ply-categories",
+      "via": "players"
+    }
+  }
+}

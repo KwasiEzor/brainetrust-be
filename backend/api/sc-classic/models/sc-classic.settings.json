@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_classics",
+  "info": {
+    "name": "ScClassic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "agendas": {
+      "via": "sc_classics",
+      "collection": "agendas"
+    }
+  }
+}

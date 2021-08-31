@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_content_layouts",
+  "info": {
+    "name": "contentLayout",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "richtext"
+    }
+  }
+}

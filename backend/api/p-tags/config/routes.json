@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/p-tags",
+      "handler": "p-tags.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/p-tags/count",
+      "handler": "p-tags.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/p-tags/:id",
+      "handler": "p-tags.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/p-tags",
+      "handler": "p-tags.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/p-tags/:id",
+      "handler": "p-tags.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/p-tags/:id",
+      "handler": "p-tags.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

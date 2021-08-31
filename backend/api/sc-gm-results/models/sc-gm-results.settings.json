@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_gm_results",
+  "info": {
+    "name": "ScGmResults",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sc_games": {
+      "via": "sc_gm_result",
+      "collection": "sc-games"
+    },
+    "nbPlayers": {
+      "type": "integer"
+    },
+    "nbScRounds": {
+      "type": "integer"
+    },
+    "nbSolos": {
+      "type": "integer"
+    },
+    "nbSoloPlayer": {
+      "type": "integer"
+    },
+    "nbSoloOrdi": {
+      "type": "integer"
+    },
+    "totalScore": {
+      "type": "integer"
+    },
+    "gameReferee": {
+      "type": "string"
+    },
+    "gm_results": {
+      "type": "component",
+      "repeatable": true,
+      "component": "results.gm-results"
+    },
+    "comments": {
+      "type": "richtext"
+    }
+  }
+}

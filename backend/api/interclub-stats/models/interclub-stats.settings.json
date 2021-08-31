@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interclub_stats",
+  "info": {
+    "name": "InterclubStats"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "player_name": {
+      "type": "string",
+      "required": true
+    },
+    "playerStat": {
+      "type": "component",
+      "repeatable": true,
+      "component": "players-stats-row.player-stat"
+    }
+  }
+}

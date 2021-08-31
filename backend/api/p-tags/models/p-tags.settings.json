@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "p_tags",
+  "info": {
+    "name": "PTags"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "posts": {
+      "via": "p_tags",
+      "collection": "posts",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "p_categories",
+  "info": {
+    "name": "PCategories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "posts": {
+      "via": "p_categories",
+      "collection": "posts",
+      "dominant": true
+    }
+  }
+}

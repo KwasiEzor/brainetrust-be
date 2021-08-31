@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_gm_round_sc_gm_rounds",
+  "info": {
+    "name": "sc-gm-round",
+    "icon": "cookie"
+  },
+  "options": {},
+  "attributes": {
+    "letterSelection": {
+      "type": "string"
+    },
+    "wordSelected": {
+      "type": "string"
+    },
+    "wordSelectedRef": {
+      "type": "string"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "comments": {
+      "type": "richtext"
+    },
+    "round_solo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "solos.round-solo"
+    }
+  }
+}

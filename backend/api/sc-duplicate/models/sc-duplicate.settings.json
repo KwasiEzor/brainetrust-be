@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_duplicates",
+  "info": {
+    "name": "ScDuplicate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "agendas": {
+      "via": "sc_duplicates",
+      "collection": "agendas"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_games",
+  "info": {
+    "name": "ScGames",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sc_gm_round": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gm-round.sc-gm-round"
+    },
+    "sc_gm_result": {
+      "via": "sc_games",
+      "model": "sc-gm-results"
+    }
+  }
+}

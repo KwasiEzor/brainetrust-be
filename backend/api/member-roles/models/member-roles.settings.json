@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "member_roles",
+  "info": {
+    "name": "MemberRoles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "nb_mandat_max": {
+      "type": "integer"
+    }
+  }
+}

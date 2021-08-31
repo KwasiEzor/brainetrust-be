@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "p_comments",
+  "info": {
+    "name": "PComments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "post": {
+      "via": "p_comments",
+      "model": "posts"
+    },
+    "members": {
+      "collection": "members",
+      "via": "p_comments",
+      "dominant": true
+    }
+  }
+}

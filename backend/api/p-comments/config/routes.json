@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/p-comments",
+      "handler": "p-comments.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/p-comments/count",
+      "handler": "p-comments.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/p-comments/:id",
+      "handler": "p-comments.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/p-comments",
+      "handler": "p-comments.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/p-comments/:id",
+      "handler": "p-comments.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/p-comments/:id",
+      "handler": "p-comments.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

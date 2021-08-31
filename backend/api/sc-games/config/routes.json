@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sc-games",
+      "handler": "sc-games.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sc-games/count",
+      "handler": "sc-games.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sc-games/:id",
+      "handler": "sc-games.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sc-games",
+      "handler": "sc-games.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sc-games/:id",
+      "handler": "sc-games.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sc-games/:id",
+      "handler": "sc-games.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

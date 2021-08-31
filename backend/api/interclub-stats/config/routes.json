@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/interclub-stats",
+      "handler": "interclub-stats.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/interclub-stats/count",
+      "handler": "interclub-stats.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/interclub-stats/:id",
+      "handler": "interclub-stats.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/interclub-stats",
+      "handler": "interclub-stats.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/interclub-stats/:id",
+      "handler": "interclub-stats.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/interclub-stats/:id",
+      "handler": "interclub-stats.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

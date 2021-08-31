@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ply_categories",
+  "info": {
+    "name": "PlyCategories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "comments": {
+      "type": "richtext"
+    },
+    "players": {
+      "via": "ply_category",
+      "collection": "players"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/member-roles",
+      "handler": "member-roles.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/member-roles/count",
+      "handler": "member-roles.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/member-roles/:id",
+      "handler": "member-roles.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/member-roles",
+      "handler": "member-roles.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/member-roles/:id",
+      "handler": "member-roles.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/member-roles/:id",
+      "handler": "member-roles.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

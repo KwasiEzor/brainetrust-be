@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_ic_ranking_clubs_rankings",
+  "info": {
+    "name": "clubsRanking",
+    "icon": "list-ol"
+  },
+  "options": {},
+  "attributes": {
+    "club_name": {
+      "type": "string",
+      "required": true
+    },
+    "game_score": {
+      "type": "integer"
+    },
+    "nb_game_played": {
+      "type": "integer"
+    },
+    "game_win": {
+      "type": "integer"
+    },
+    "game_lost": {
+      "type": "integer"
+    },
+    "game_draw": {
+      "type": "integer"
+    },
+    "clubs": {
+      "collection": "clubs"
+    }
+  }
+}

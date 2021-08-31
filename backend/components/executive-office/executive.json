@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_executive_office_executives",
+  "info": {
+    "name": "executive",
+    "icon": "chalkboard-teacher",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mandat_start": {
+      "type": "string"
+    },
+    "mandat_end": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "richtext"
+    },
+    "member_role": {
+      "model": "member-roles"
+    },
+    "member": {
+      "model": "members"
+    }
+  }
+}

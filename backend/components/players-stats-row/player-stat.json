@@ -1,0 +1,67 @@
+{
+  "collectionName": "components_players_stats_row_player_stats",
+  "info": {
+    "name": "playerStat",
+    "icon": "file-powerpoint"
+  },
+  "options": {},
+  "attributes": {
+    "negative_points_avg": {
+      "type": "integer"
+    },
+    "nb_scnd_position_rk": {
+      "type": "integer"
+    },
+    "avg_ic_lost_points": {
+      "type": "decimal"
+    },
+    "nb_third_position_rk": {
+      "type": "integer"
+    },
+    "average_ic_score": {
+      "type": "decimal"
+    },
+    "nb_podium_rk": {
+      "type": "integer"
+    },
+    "bad_negative_points": {
+      "type": "integer"
+    },
+    "bad_percentage": {
+      "type": "decimal"
+    },
+    "nb_first_position_rk": {
+      "type": "integer"
+    },
+    "best_percentage": {
+      "type": "decimal"
+    },
+    "best_negative_points": {
+      "type": "integer"
+    },
+    "nb_ic_score": {
+      "type": "decimal"
+    },
+    "percentage_average": {
+      "type": "decimal"
+    },
+    "best_ranking_average": {
+      "type": "decimal"
+    },
+    "ic_lost_point": {
+      "type": "integer"
+    },
+    "best_ranking": {
+      "type": "integer"
+    },
+    "bad_ranking": {
+      "type": "integer"
+    },
+    "nb_games_played": {
+      "type": "integer"
+    },
+    "competition_year": {
+      "type": "string"
+    }
+  }
+}

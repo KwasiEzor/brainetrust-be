@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "likes",
+  "info": {
+    "name": "Likes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nb_likes": {
+      "type": "integer"
+    },
+    "posts": {
+      "via": "likes",
+      "collection": "posts",
+      "dominant": true
+    }
+  }
+}

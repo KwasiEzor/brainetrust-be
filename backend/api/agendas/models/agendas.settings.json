@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agendas",
+  "info": {
+    "name": "Agendas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event": {
+      "type": "string",
+      "required": true
+    },
+    "event_date": {
+      "type": "date"
+    },
+    "event_time": {
+      "type": "time"
+    },
+    "competitions": {
+      "collection": "competitions",
+      "via": "agenda",
+      "dominant": true
+    },
+    "sc_duplicates": {
+      "collection": "sc-duplicate",
+      "via": "agendas",
+      "dominant": true
+    },
+    "sc_classics": {
+      "collection": "sc-classic",
+      "via": "agendas",
+      "dominant": true
+    },
+    "event_place": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "minutes_per_round": {
+      "type": "string"
+    }
+  }
+}

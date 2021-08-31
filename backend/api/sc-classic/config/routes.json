@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sc-classics",
+      "handler": "sc-classic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sc-classics/count",
+      "handler": "sc-classic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sc-classics/:id",
+      "handler": "sc-classic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sc-classics",
+      "handler": "sc-classic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sc-classics/:id",
+      "handler": "sc-classic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sc-classics/:id",
+      "handler": "sc-classic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

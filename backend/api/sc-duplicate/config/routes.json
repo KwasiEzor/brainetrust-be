@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sc-duplicates",
+      "handler": "sc-duplicate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sc-duplicates/count",
+      "handler": "sc-duplicate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sc-duplicates/:id",
+      "handler": "sc-duplicate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sc-duplicates",
+      "handler": "sc-duplicate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sc-duplicates/:id",
+      "handler": "sc-duplicate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sc-duplicates/:id",
+      "handler": "sc-duplicate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
